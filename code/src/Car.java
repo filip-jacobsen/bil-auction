@@ -57,6 +57,11 @@ public class Car implements Comparable<Car> {
 
     @Override
     public int compareTo(Car o) {
-        return 0;
+        return Integer.compare(o.getYear(), this.year);
+    }
+
+    @Override
+    public String toString() {
+        return "Brand: " + brand + ", Model: " + model + ", Year: " + year + ", Base price: " + basePrice +  " Numberplate: " + numberPlate;
     }
 }

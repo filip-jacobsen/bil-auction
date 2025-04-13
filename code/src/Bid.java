@@ -37,7 +37,11 @@ public class Bid {
     public String getCarModel() {
         return car.getModel();
     }
-    //public void setCarBrand(Car car) { // there was an error here as I have already used the instance this.car = car;
-      //  this.car = car;
-    //}
+
+    public String getCarBrandAndModel() {
+        return car.getBrand() + car.getModel();
+    }
+    public String toString() {
+        return "biddername: " + bidderName + ", amount: " + amount + "  Car: " + getCarBrand() + " " + getCarModel() + ".";
+    }
 }
